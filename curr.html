@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+    <div>Quiz Pro</div>
+
+    <div class="topics">
+        <button onclick="loadTopic('history')">History</button>
+        <button onclick="loadTopic('geography')">Geography</button>
+        <button onclick="loadTopic('polity')">Polity</button>
+        <button onclick="loadTopic('ancient')">Ancient</button>
+        <button onclick="loadTopic('current')">Current</button>
+    </div>
+
+    <div id="status"></div>
+    <div id="timerText">⏳ 20</div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar" id="bar"></div>
+</div>
+
+<div class="timer-bar" id="timerBar"></div>
+
+<!-- SETS -->
+<div class="set-bar">
+    <button onclick="loadSet('set1')">Set 1</button>
+    <button onclick="loadSet('set2')">Set 2</button>
+    <button onclick="loadSet('set3')">Set 3</button>
+    <button onclick="loadSet('set4')">Set 4</button>
+    <button onclick="loadSet('set5')">Set 5</button>
+</div>
+
+<div class="app">
+
+<div class="main">
+
+<div id="quizBox">
+
+    <div id="qText"></div>
+    <div id="options"></div>
+
+    <div class="btns">
+        <button onclick="prev()">Prev</button>
+        <button onclick="mark()">Mark</button>
+        <button onclick="next()">Next</button>
+        <button onclick="submitQuiz()">Submit</button>
+    </div>
+
+</div>
+
+<div id="resultBox" style="display:none;">
+    <h2>Result</h2>
+    <div id="scoreText"></div>
+    <div id="review"></div>
+</div>
+
+</div>
+
+<div class="sidebar">
+    <h3>Palette</h3>
+    <div id="palette"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
