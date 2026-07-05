@@ -2,26 +2,36 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Quiz Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CURRENT AFFAIRS</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 
 <body>
 
-<div class="header">
-    <div>Quiz Pro</div>
+<header class="header">
+    <div class="logo">CURRENT AFFAIES</div>
 
-    <div class="topics">
-        <button onclick="loadTopic('history')">History</button>
-        <button onclick="loadTopic('geography')">Geography</button>
-        <button onclick="loadTopic('polity')">Polity</button>
-        <button onclick="loadTopic('ancient')">Ancient</button>
-        <button onclick="loadTopic('current')">Current</button>
-    </div>
+    <nav class="topics">
+        <button class="topic-btn" data-topic="current">current affairs</button>
+        <button class="topic-btn" data-topic="atomic structure">Atomic Structure</button>
+        <button class="topic-btn" data-topic="chemical bonding">Chemical Bonding</button>
+        <button class="topic-btn" data-topic="chemical reaction">Chemical Reactions & Equations</button>
+        <button class="topic-btn" data-topic="carbon">Carbon & Its Compounds + Metals & Non-Metals</button>
+        <button class="topic-btn" data-topic="periodic table">Periodic Table & Classification + Fuels & Combustion</button>
+        <button class="topic-btn" data-topic="matter">Matter & Its States</button>
+        <button class="topic-btn" data-topic="august">Solutions & Mixtures + Electrochemistry + Laboratory Chemistry</button>
+        <button class="topic-btn" data-topic="september">Polymers & Plastics + Oxidation & Reduction</button>
+        <button class="topic-btn" data-topic="october">Corrosion & Rusting + Miscellaneous</button>
+        <button class="topic-btn" data-topic="november">November</button>
+        <button class="topic-btn" data-topic="december">December</button>
+    </nav>
 
-    <div id="status"></div>
+    <div id="status">Ready</div>
     <div id="timerText">⏳ 20</div>
-</div>
+</header>
 
 <div class="progress">
     <div class="progress-bar" id="bar"></div>
@@ -30,21 +40,26 @@
 <div class="timer-bar" id="timerBar"></div>
 
 <!-- SETS -->
-<div class="set-bar">
-    <button onclick="loadSet('set1')">Set 1</button>
-    <button onclick="loadSet('set2')">Set 2</button>
-    <button onclick="loadSet('set3')">Set 3</button>
-    <button onclick="loadSet('set4')">Set 4</button>
-    <button onclick="loadSet('set5')">Set 5</button>
+<div class="set-bar" style="border:3px solid red;background:#fcf80f;">
+    <button class="set-btn" data-set="set1">Set 1</button>
+    <button class="set-btn" data-set="set2">Set 2</button>
+    <button class="set-btn" data-set="set3">Set 3</button>
+    <button class="set-btn" data-set="set4">Set 4</button>
+    <button class="set-btn" data-set="set5">Set 5</button>
+    <button class="set-btn" data-set="set6">Set 6</button>
+    <button class="set-btn" data-set="set7">Set 7</button>
+    <button class="set-btn" data-set="set8">Set 8</button>
+    <button class="set-btn" data-set="set9">Set 9</button>
+    <button class="set-btn" data-set="set10">Set 10</button>
 </div>
 
 <div class="app">
 
-<div class="main">
+<main class="main">
 
 <div id="quizBox">
 
-    <div id="qText"></div>
+    <div id="qText">Select a quiz to start</div>
     <div id="options"></div>
 
     <div class="btns">
@@ -62,15 +77,14 @@
     <div id="review"></div>
 </div>
 
-</div>
+</main>
 
-<div class="sidebar">
+<aside class="sidebar">
     <h3>Palette</h3>
-    <div id="palette"></div>
-</div>
+    <div id="palette">No questions loaded</div>
+</aside>
 
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>
